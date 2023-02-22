@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <character.cat>Cat</character.cat>
+  <character.wolf>Wolf</character.wolf>
+  <character.fox>Fox</character.fox>
+  <character.dog>Dog</character.dog>
+  <afflictionname.cat>Cat Genes</afflictionname.cat>
+  <afflictionname.wolf>Wolf Genes</afflictionname.wolf>
+  <afflictionname.fox>Fox Genes</afflictionname.fox>
+  <afflictionname.dog>Dog Genes</afflictionname.dog>
+  <afflictiondescription.cat>Subject grows cat ears and tail and can bite. Moves faster on land.</afflictiondescription.cat>
+  <afflictiondescription.wolf>Subject grows the ears and tail of a wolf and can bite. Can withstand more damage.</afflictiondescription.wolf>
+  <afflictiondescription.fox>Subject grows fox ears and tail and can bite. Deals more melee damage.</afflictiondescription.fox>
+  <afflictiondescription.dog>Subject grows the ears and tail of a dog and can bite. Swims faster.</afflictiondescription.dog>
+  <entitydescription.geneticmaterialcat>The owner grows cat ears and tail and can bite. Increases land movement speed by [value]%.</entitydescription.geneticmaterialcat>
+  <entitydescription.geneticmaterialfox>The owner grows fox ears and tail and can bite. Increases melee damage by [value]%.</entitydescription.geneticmaterialfox>
+  <entitydescription.geneticmaterialdog>The owner grows the dog's ears and tail and can bite. Increases movement speed in water by [value]%.</entitydescription.geneticmaterialdog>
+  <entitydescription.geneticmaterialwolf>The wearer grows the ears and tail of a wolf and can bite. Increases damage resistance by [value]%.</entitydescription.geneticmaterialwolf>
+  <entityname.unidentifiedanimalgeneticmaterial>Genetic material from Earth</entityname.unidentifiedanimalgeneticmaterial>
+  <entitydescription.unidentifiedanimalgeneticmaterial>A mass of genetic material from the Earth. The research station will allow you to determine its identity and transform it into a form suitable for a gene splicer.</entitydescription.unidentifiedanimalgeneticmaterial>
+</infotexts>

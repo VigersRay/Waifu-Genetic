@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  
+  <!-- Ушки -->
+  <limb name="Cat Ears 1" id="16" type="None" width="0" height="0" notes="" flip="True" healthindex="0" attackpriority="0" steerforce="0" stepoffset="0,0" radius="20" mass="0" density="5" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.35" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <sprite sourcerect="174,76,62,115" origin="0.5,0.3" depth="0.0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" texture="%ModDir%/Atlas_ears.png" ignoretint="True" />
+
+    <!-- Здесь добавляется возможность персонажа "кусаться" -->
+    <attack context="Any" cooldown="2" afterattack="Pursue" range="50" damagerange="50" duration="0.5" structuredamage="0" itemdamage="0" targetforce="0" severlimbsprobability="0.3" torque="100" force="30" applyforceonlimbs="0,1" targettype="Any" hitdetectiontype="Distance" stun="0" onlyhumans="False" applyforcesonlyonce="True" targetimpulse="5" targetimpulseworld="0,0" targetforceworld="0,-5" stickchance="0" priority="1" secondarycooldown="0" cooldownrandomfactor="0.5" reverse="False" targetlimbtype="None" afterattackdelay="0" retreat="False" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear">
+      <Affliction identifier="bitewounds" strength="2" probability="1" />
+      <Affliction identifier="stun" strength="0.5" probability="1" />
+    </attack>
+  </limb>
+  <limb name="Cat Ears 2" id="17" type="None" width="0" height="0" notes="" flip="True" healthindex="0" attackpriority="0" steerforce="0" stepoffset="0,0" radius="20" mass="0" density="5" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.35" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <sprite sourcerect="247,93,73,63" origin="0.5,0.3" depth="1.0" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" texture="%ModDir%/Atlas_ears.png" ignoretint="True" />
+  </limb>
+
+  <!-- Первый тайл хвоста -->
+  <limb name="Cat Tail 1" id="18" radius="10" height="50" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1" steerforce="0" stepoffset="0,0" width="20" density="1" refjoint="47" ignorecollisions="False" notes="" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.80" attackforcemultiplier="1" minseverancedamage="1" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="True" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
+    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="442,90,44,96" origin="0.5,0.5" depth="0.124" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
+  </limb>
+
+  <!-- Второй тайл хвоста -->
+  <limb name="Cat Tail 2" id="19" radius="10" height="50" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1" steerforce="0" stepoffset="0,0" width="20" density="1" refjoint="47" ignorecollisions="False" notes="" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.80" attackforcemultiplier="1" minseverancedamage="1" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="True" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
+    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="445,187,28,69" origin="0.5,0.5" depth="0.123" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
+  </limb>
+
+  <!-- Третий тайл хвоста -->
+  <limb name="Cat Tail 3" id="20" radius="10" height="50" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1" steerforce="0" stepoffset="0,0" width="20" density="1" refjoint="47" ignorecollisions="False" notes="" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.80" attackforcemultiplier="1" minseverancedamage="1" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="True" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
+    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="445,260,31,60" origin="0.5,0.5" depth="0.122" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
+  </limb>
+
+  <!-- Чётвертый тайл хвоста -->
+  <limb name="Cat Tail 4" id="21" radius="10" height="50" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1" steerforce="0" stepoffset="0,0" width="20" density="1" refjoint="47" ignorecollisions="False" notes="" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="0.80" attackforcemultiplier="1" minseverancedamage="1" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="True" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
+    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="446,322,27,70" origin="0.5,0.5" depth="0.121" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
+  </limb>
+
+  <!-- Соединяем ушки к голове -->
+  <joint name="Cat Ears 1 to Head" limb1="1" limb2="16" limb1anchor="0,30" limb2anchor="0,0" upperlimit="0" weldjoint="true" lowerlimit="0" canbesevered="False " limitenabled="True" />
+  <joint name="Cat Ears 2 to Head" limb1="1" limb2="17" limb1anchor="12,30" limb2anchor="0,0" upperlimit="0" weldjoint="true" lowerlimit="0" canbesevered="False " limitenabled="True" />
+
+  <!-- Соединяем первый тайл хвоста к тазу -->
+  <joint name="Tail 1 to Waist" limb1="12" limb2="18" limb1anchor="-2,5" limb2anchor="0,23" weldjoint="false" upperlimit="-20" lowerlimit="-76" limitenabled="True" stiffness="0.5" />
+
+  <!-- Соединяем второй тайл хвоста к первому. Вы наверное спросите почему айди первого лимба 15 а не 17? А я сам без понятия на самом деле, разраб явно где-то проебался поэтому айди нужно указывать со смещеннием, иначе работать ничего не будет. Я конечно мог бы сделать иссуе на гите, но мне честно лень, если у вас есть свободное время займитесь этим и может быть у нас будет адекватная реализация хвоста а не этот костыль -->
+  <joint name="Joint tail 2-1" limb1="18" limb2="19" limb1anchor="-5,-26" limb2anchor="0,21" limitenabled="True" upperlimit="12" lowerlimit="-20" weldjoint="False" stiffness="0.3" />
+
+  <!-- Соединяем третий тайл хвоста к второму тайлу -->
+  <joint name="Joint tail 3-2" limb1="19" limb2="20" limb1anchor="-2,-21" limb2anchor="-3,18" breaksound="gore" limitenabled="True" upperlimit="13" lowerlimit="-39" scale="1" stiffness="1" />
+
+  <!-- Соединяем четвёртый тайл хвоста к третьему тайлу -->
+  <joint name="Joint tail 4-3" limb1="20" limb2="21" limb1anchor="-2,-21" limb2anchor="-2,19" breaksound="gore" limitenabled="True" upperlimit="13" lowerlimit="-63" scale="1" stiffness="1" />
+
+</huskappendage>

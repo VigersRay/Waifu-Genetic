@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Waifu Genetic (EuropaWaifu++) [FIXED]" modversion="1.0.8" corepackage="False" steamworkshopid="2881952787" gameversion="0.21.6.0" altnames="Waifu Genetic">
+  <Afflictions file="%ModDir%/AfflictionsGeneticMaterial.xml" />
+  <Character file="%ModDir%/Characters/Humancat/Humancat.xml" />
+  <Character file="%ModDir%/Characters/Humanwolf/Humanwolf.xml" />
+  <Character file="%ModDir%/Characters/Humandog/Humandog.xml" />
+  <Character file="%ModDir%/Characters/Humanfox/Humanfox.xml" />
+  <Item file="%ModDir%/genetic.xml" />
+  <Text file="%ModDir%/Localization/BrazilianPortuguese.xml" />
+  <Text file="%ModDir%/Localization/CastilianSpanish.xml" />
+  <Text file="%ModDir%/Localization/English.xml" />
+  <Text file="%ModDir%/Localization/French.xml" />
+  <Text file="%ModDir%/Localization/German.xml" />
+  <Text file="%ModDir%/Localization/Japanese.xml" />
+  <Text file="%ModDir%/Localization/Korean.xml" />
+  <Text file="%ModDir%/Localization/LatinamericanSpanish.xml" />
+  <Text file="%ModDir%/Localization/Polish.xml" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Text file="%ModDir%/Localization/SimplifiedChinese.xml" />
+  <Text file="%ModDir%/Localization/TraditionalChinese.xml" />
+  <Text file="%ModDir%/Localization/Turkish.xml" />
+  <Other file="%ModDir%/Atlas_tails.png" />
+  <Other file="%ModDir%/Atlas_ears.png" />
+  <Other file="%ModDir%/Cat.xml" />
+  <Other file="%ModDir%/Wolf.xml" />
+  <Other file="%ModDir%/Dog.xml" />
+  <Other file="%ModDir%/Fox.xml" />
+  <Other file="%ModDir%/Genetic.png" />
+</contentpackage>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+  <!-- Рандомный генетический материал с шансом выпадения различного качества. Продается в магазине -->
+  <Item name="" identifier="animalgeneticmaterial_unresearched" nameidentifier="unidentifiedgeneticmaterial" category="Material" maxstacksize="1" tags="smallitem,unidentifiedgeneticmaterial,blackmarketgenes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <PreferredContainer primary="medfabcab" spawnprobability="0"/>
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.01"/>
+    <PreferredContainer secondary="geneticstorage" spawnprobability="0.02" />
+    <Price baseprice="500" sold="true" requiresunlock="true">
+      <Price storeidentifier="merchantcity" sold="true"/>
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="1" />
+    </Price>
+    <Deconstruct time="5" chooserandom="true" amount="1" requireddeconstructor="geneticresearchstation">
+
+      <!-- Генетический материал собаки -->
+      <Item identifier="geneticmaterialdog" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialdog" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialdog" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+
+      <!-- Генетический материал кошки -->
+      <Item identifier="geneticmaterialcat" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialcat" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialcat" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+
+      <!-- Генетический материал лицицы -->
+      <Item identifier="geneticmaterialfox" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialfox" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialfox" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+
+      <!-- Генетический материал волка -->
+      <Item identifier="geneticmaterialwolf" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialwolf" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      <Item identifier="geneticmaterialwolf" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
+      
+    </Deconstruct>
+    <Sprite texture="Content/Items/Genetic/Genetic.png" sourcerect="0,79,58,40" depth="0.6" origin="0.5,0.5" />
+    <Body width="15" radius="15" density="20" />
+    <Pickable slots="Any" />
+  </Item>
+
+  <!-- Генетический материал кошки -->
+  <Item name="" identifier="geneticmaterialcat" variantof="geneticmaterialcrawler">
+    <PreferredContainer primary="medfabcab" />
+    <Price baseprice="750" sold="false">
+      <Price storeidentifier="merchantcity"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.2" />
+    </Price>
+    <Deconstruct time="5" requireddeconstructor="geneticresearchstation">
+      <Item identifier="geneticmaterialcat" requiredotheritem="geneticmaterial" activatebuttontext="researchstation.combine" infotext="researchstation.combine.infotext" infotextonotheritemmissing="researchstation.refine.missingitem" />
+    </Deconstruct>
+    <GeneticMaterial nameidentifier="character.cat" effect="cat" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="10" tooltipvaluemax="50">
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+        <Affliction identifier="organdamage" amount="10" />
+        <Affliction identifier="stun" amount="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Remove />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="0,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Genetic.png" sheetindex="0,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
+      <Containable items="geneticmaterial" />
+    </ItemContainer>
+  </Item>
+
+  <!-- Генетический материал волка -->
+  <Item name="" identifier="geneticmaterialwolf" variantof="geneticmaterialcrawler">
+    <PreferredContainer primary="medfabcab" />
+    <Price baseprice="750" sold="false">
+      <Price storeidentifier="merchantcity"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.2" />
+    </Price>
+    <Deconstruct time="5" requireddeconstructor="geneticresearchstation">
+      <Item identifier="geneticmaterialwolf" requiredotheritem="geneticmaterial" activatebuttontext="researchstation.combine" infotext="researchstation.combine.infotext" infotextonotheritemmissing="researchstation.refine.missingitem" />
+    </Deconstruct>
+    <GeneticMaterial nameidentifier="character.wolf" effect="wolf" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="10" tooltipvaluemax="50">
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+        <Affliction identifier="organdamage" amount="10" />
+        <Affliction identifier="stun" amount="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Remove />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="1,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Genetic.png" sheetindex="1,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
+      <Containable items="geneticmaterial" />
+    </ItemContainer>
+  </Item>
+
+  <!-- Генетический материал лисицы -->
+  <Item name="" identifier="geneticmaterialfox" variantof="geneticmaterialcrawler">
+    <PreferredContainer primary="medfabcab" />
+    <Price baseprice="750" sold="false">
+      <Price storeidentifier="merchantcity"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.2" />
+    </Price>
+    <Deconstruct time="5" requireddeconstructor="geneticresearchstation">
+      <Item identifier="geneticmaterialfox" requiredotheritem="geneticmaterial" activatebuttontext="researchstation.combine" infotext="researchstation.combine.infotext" infotextonotheritemmissing="researchstation.refine.missingitem" />
+    </Deconstruct>
+    <GeneticMaterial nameidentifier="character.fox" effect="fox" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="10" tooltipvaluemax="50">
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+        <Affliction identifier="organdamage" amount="10" />
+        <Affliction identifier="stun" amount="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Remove />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="2,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Genetic.png" sheetindex="2,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
+      <Containable items="geneticmaterial" />
+    </ItemContainer>
+  </Item>
+
+  <!-- Генетический материал собаки -->
+  <Item name="" identifier="geneticmaterialdog" variantof="geneticmaterialcrawler">
+    <PreferredContainer primary="medfabcab" />
+    <Price baseprice="750" sold="false">
+      <Price storeidentifier="merchantcity"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.2" />
+    </Price>
+    <Deconstruct time="5" requireddeconstructor="geneticresearchstation">
+      <Item identifier="geneticmaterialdog" requiredotheritem="geneticmaterial" activatebuttontext="researchstation.combine" infotext="researchstation.combine.infotext" infotextonotheritemmissing="researchstation.refine.missingitem" />
+    </Deconstruct>
+    <GeneticMaterial nameidentifier="character.dog" effect="dog" conditionincreaseoncombinemin="5.0" conditionincreaseoncombinemax="8.0" tooltipvaluemin="10" tooltipvaluemax="50">
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect type="OnWearing" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.3" scalemax="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="Character" duration="0.0">
+        <Sound file="Content/Sounds/Damage/Gore1.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Sounds/Damage/Gore3.ogg" type="OnUse" range="500" />
+        <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="1.0" />
+        <Affliction identifier="organdamage" amount="10" />
+        <Affliction identifier="stun" amount="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnSevered" target="This" duration="0.0">
+        <Remove />
+      </StatusEffect>
+    </GeneticMaterial>
+    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="3,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Genetic.png" sheetindex="3,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <Body width="23" height="31" density="20" />
+    <Holdable handle1="0,0" slots="Any"></Holdable>
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
+      <Containable items="geneticmaterial" />
+    </ItemContainer>
+  </Item>
+
+  <!-- Скрытие спайщика на голове -->
+  <Override>
+    <Item name="" identifier="genesplicer" scale="0.4" category="Equipment" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="medcab" secondary="medcab" />
+      <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.02" />
+      <Price baseprice="500" minleveldifficulty="15">
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantcity" sold="false" />
+        <Price storeidentifier="merchantmedical" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="plastic" amount="2" />
+        <Item identifier="copper" amount="2" />
+        <Item identifier="rubber" />
+        <Item identifier="silicon" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="plastic" />
+        <RequiredItem identifier="fpgacircuit" amount="2" />
+        <RequiredItem identifier="rubber" amount="2" />
+        <RequiredItem identifier="silicon" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="244,62,76,65" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />
+      <Body radius="15" width="45" density="30" />
+      <ItemContainer capacity="1" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+        <Containable items="geneticmaterial" />
+      </ItemContainer>
+      <Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Gene Splicer Wearable" texture="%ModDir%/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="150,150,64,54" origin="0.6,0.0" />
+      </Wearable>
+    </Item>
+  </Override>
+</Items>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <character.cat>Кошка</character.cat>
+  <character.wolf>Волк</character.wolf>
+  <character.fox>Лиса</character.fox>
+  <character.dog>Собака</character.dog>
+  <afflictionname.cat>Гены Кошки</afflictionname.cat>
+  <afflictionname.wolf>Гены Волка</afflictionname.wolf>
+  <afflictionname.fox>Гены Лисицы</afflictionname.fox>
+  <afflictionname.dog>Гены Собаки</afflictionname.dog>
+  <afflictiondescription.cat>Подопытный отращивает уши и хвост кошки, может кусаться. Быстрее передвигается по суше.</afflictiondescription.cat>
+  <afflictiondescription.wolf>Подопытный отращивает уши и хвост волка, может кусаться. Выдерживает больше урона.</afflictiondescription.wolf>
+  <afflictiondescription.fox>Подопытный отращивает уши и хвост лисицы, может кусаться. Наносит больше урона в ближнем бою.</afflictiondescription.fox>
+  <afflictiondescription.dog>Подопытный отращивает уши и хвост собаки, может кусаться. Быстрее плавает.</afflictiondescription.dog>
+  <entitydescription.geneticmaterialcat>Владелец отращивает уши и хвост кошки, может кусаться. Увеличивает скорость передвижения по суше на [value]%.</entitydescription.geneticmaterialcat>
+  <entitydescription.geneticmaterialfox>Владелец отращивает уши и хвост лисицы, может кусаться. Увеличивает урон в ближнем бою на [value]%.</entitydescription.geneticmaterialfox>
+  <entitydescription.geneticmaterialdog>Владелец отращивает уши и хвост собаки, может кусаться. Увеличивает скорость передвижения в воде на [value]%.</entitydescription.geneticmaterialdog>
+  <entitydescription.geneticmaterialwolf>Владелец отращивает уши и хвост волка, может кусаться. Увеличивает сопротивление урону на [value]%.</entitydescription.geneticmaterialwolf>
+  <entityname.unidentifiedanimalgeneticmaterial>Генетический материал с земли</entityname.unidentifiedanimalgeneticmaterial>
+  <entitydescription.unidentifiedanimalgeneticmaterial>Масса генетического материала с Земли. Исследовательская станция позволит определить его принадлежность и преобразовать в форму, пригодную для спайщика генов.</entitydescription.unidentifiedanimalgeneticmaterial>
+</infotexts>
