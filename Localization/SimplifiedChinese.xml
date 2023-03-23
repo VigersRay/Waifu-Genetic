@@ -1,2 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)"></infotexts>
+<infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
+  <character.cat>猫</character.cat>
+  <character.wolf>狼</character.wolf>
+  <character.fox>狐</character.fox>
+  <character.dog>狗</character.dog>
+  <afflictionname.cat>猫的基因</afflictionname.cat>
+  <afflictionname.wolf>狼的基因</afflictionname.wolf>
+  <afflictionname.fox>狐的基因</afflictionname.fox>
+  <afflictionname.dog>狗的基因</afflictionname.dog>
+  <afflictiondescription.cat>使用者长出猫的耳朵和尾巴，可以咬人。在陆地上移动得更快。</afflictiondescription.cat>
+  <afflictiondescription.wolf>使用者长出狼的耳朵和尾巴，可以咬人。可以承受更多的伤害。</afflictiondescription.wolf>
+  <afflictiondescription.fox>使用者长出狐狸的耳朵和尾巴，可以咬人。造成更多近战伤害。</afflictiondescription.fox>
+  <afflictiondescription.dog>使用者长出狗的耳朵和尾巴，可以咬人。游得更快。</afflictiondescription.dog>
+  <entitydescription.geneticmaterialcat>使用者将长着猫的耳朵和尾巴，可以咬人。将陆地移动速度提高[value]%。</entitydescription.geneticmaterialcat>
+  <entitydescription.geneticmaterialfox>使用者将长着狐狸的耳朵和尾巴，可以咬人。近战伤害增加[value]%。</entitydescription.geneticmaterialfox>
+  <entitydescription.geneticmaterialdog>使用者将长出狗的耳朵和尾巴，可以咬人。增加水中移动速度[value]%。</entitydescription.geneticmaterialdog>
+  <entitydescription.geneticmaterialwolf>使用者将长出狼的耳朵和尾巴，可以咬人。增加[value]%的伤害抗性。</entitydescription.geneticmaterialwolf>
+  <entityname.unidentifiedanimalgeneticmaterial>来自地球的遗传物质</entityname.unidentifiedanimalgeneticmaterial>
+  <entitydescription.unidentifiedanimalgeneticmaterial>来自地球的大量遗传物质。在研究站进行鉴定并将其转化为适合基因剪接器的形式。</entitydescription.unidentifiedanimalgeneticmaterial>
+</infotexts>
