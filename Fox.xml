@@ -18,7 +18,7 @@
 
   <!-- Собственно сам хвост -->
   <limb name="Fox Tail 1" id="16" radius="10" height="163" mass="0" type="None" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1" steerforce="0" stepoffset="0,0" width="0" density="5" refjoint="-1" ignorecollisions="True" notes="" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="1" inheritlimbdepth="None" severedfadeouttime="10" applytailangle="True" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" onlyblinkinwater="False" blinktransitionin="Linear" blinktransitionout="Linear">
-    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="76,0,135,183" origin="0.5,0.5" depth="0.124" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
+    <sprite texture="%ModDir%/Atlas_tails.png" sourcerect="76,0,135,183" origin="0.5,0.5" depth="0.07" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" ignoretint="True" />
   </limb>
 
   <!-- Соединяем ушки к голове -->
