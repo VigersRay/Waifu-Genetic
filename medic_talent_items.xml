@@ -1,4 +1,5 @@
  <!-- Hiding advanced splicer -->
+<Items>
  <Override>
   <Item identifier="advancedgenesplicer" variantof="genesplicer" allowasextracargo="true" descriptionidentifier="advancedgenesplicer">
     <PreferredContainer primary="medcab" secondary="medcab"/>
@@ -35,3 +36,4 @@
     </Wearable>
   </Item>
  </Override>
+</Items>
