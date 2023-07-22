@@ -32,7 +32,7 @@
     <Body radius="15" width="45" density="30" />
     <ItemContainer capacity="2" />
     <Wearable>
-      <sprite name="Gene Splicer Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="326,131,67,55" origin="0.6,0.0" />
+      <sprite name="Gene Splicer Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="150,150,64,54" origin="0.6,0.0" />
     </Wearable>
   </Item>
  </Override>
