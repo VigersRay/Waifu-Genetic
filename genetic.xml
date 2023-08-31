@@ -2,13 +2,13 @@
 <Items>
 
   <!-- Рандомный генетический материал с шансом выпадения различного качества. Продается в магазине -->
-  <Item name="" identifier="animalgeneticmaterial_unresearched" nameidentifier="unidentifiedgeneticmaterial" category="Material" maxstacksize="1" tags="smallitem,unidentifiedgeneticmaterial,blackmarketgenes" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+  <Item name="" identifier="animalgeneticmaterial_unresearched" nameidentifier="unidentifiedanimalgeneticmaterial" category="Material" maxstacksize="1" tags="smallitem,unidentifiedgeneticmaterial" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="medfabcab" spawnprobability="0"/>
     <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.01"/>
     <PreferredContainer secondary="geneticstorage" spawnprobability="0.02" />
-    <Price baseprice="500" sold="true" requiresunlock="true">
-      <Price storeidentifier="merchantcity" sold="true"/>
-      <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="1" />
+    <Price baseprice="500" sold="true" requiresunlock="false">
+      <Price storeidentifier="merchantcity" sold="true" minavailable="2" maxavailable="5" />
+      <Price storeidentifier="merchantresearch" sold="true" minavailable="5" maxavailable="10" />
     </Price>
     <Deconstruct time="5" chooserandom="true" amount="1" requireddeconstructor="geneticresearchstation">
 

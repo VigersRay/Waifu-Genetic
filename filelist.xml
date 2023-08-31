@@ -6,6 +6,7 @@
   <Character file="%ModDir%/Characters/Humandog/Humandog.xml" />
   <Character file="%ModDir%/Characters/Humanfox/Humanfox.xml" />
   <Item file="%ModDir%/genetic.xml" />
+  <Item file="%ModDir%/medic_talent_items.xml" />
   <Text file="%ModDir%/Localization/BrazilianPortuguese.xml" />
   <Text file="%ModDir%/Localization/CastilianSpanish.xml" />
   <Text file="%ModDir%/Localization/English.xml" />
