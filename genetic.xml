@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-
   <!-- Рандомный генетический материал с шансом выпадения различного качества. Продается в магазине -->
   <Item name="" identifier="animalgeneticmaterial_unresearched" nameidentifier="unidentifiedanimalgeneticmaterial" category="Material" maxstacksize="1" tags="smallitem,unidentifiedgeneticmaterial" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="medfabcab" spawnprobability="0"/>
@@ -11,33 +10,27 @@
       <Price storeidentifier="merchantresearch" sold="true" minavailable="5" maxavailable="10" />
     </Price>
     <Deconstruct time="5" chooserandom="true" amount="1" requireddeconstructor="geneticresearchstation">
-
       <!-- Генетический материал собаки -->
       <Item identifier="geneticmaterialdog" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialdog" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialdog" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
-
       <!-- Генетический материал кошки -->
       <Item identifier="geneticmaterialcat" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialcat" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialcat" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
-
       <!-- Генетический материал лицицы -->
       <Item identifier="geneticmaterialfox" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialfox" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialfox" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
-
       <!-- Генетический материал волка -->
       <Item identifier="geneticmaterialwolf" commonness="3" requiredotheritem="stabilozine" outconditionmin="0.1" outconditionmax="0.2" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialwolf" commonness="2" requiredotheritem="stabilozine" outconditionmin="0.2" outconditionmax="0.4" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
       <Item identifier="geneticmaterialwolf" commonness="1" requiredotheritem="stabilozine" outconditionmin="0.4" outconditionmax="0.6" activatebuttontext="researchstation.research" infotext="researchstation.research.infotext" infotextonotheritemmissing="researchstation.combine.missingitem" />
-      
     </Deconstruct>
     <Sprite texture="Content/Items/Genetic/Genetic.png" sourcerect="0,79,58,40" depth="0.6" origin="0.5,0.5" />
     <Body width="15" radius="15" density="20" />
     <Pickable slots="Any" />
   </Item>
-
   <!-- Генетический материал кошки -->
   <Item name="" identifier="geneticmaterialcat" variantof="geneticmaterialcrawler">
     <PreferredContainer primary="medfabcab" />
@@ -69,15 +62,14 @@
         <Remove />
       </StatusEffect>
     </GeneticMaterial>
-    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="0,1" sheetelementsize="64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Genetic.png" sheetindex="0,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Textures/Genetic.png" sheetindex="0,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Textures/Genetic.png" sheetindex="0,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
     <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
       <Containable items="geneticmaterial" />
     </ItemContainer>
   </Item>
-
   <!-- Генетический материал волка -->
   <Item name="" identifier="geneticmaterialwolf" variantof="geneticmaterialcrawler">
     <PreferredContainer primary="medfabcab" />
@@ -109,15 +101,14 @@
         <Remove />
       </StatusEffect>
     </GeneticMaterial>
-    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="1,1" sheetelementsize="64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Genetic.png" sheetindex="1,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Textures/Genetic.png" sheetindex="1,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Textures/Genetic.png" sheetindex="1,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
     <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
       <Containable items="geneticmaterial" />
     </ItemContainer>
   </Item>
-
   <!-- Генетический материал лисицы -->
   <Item name="" identifier="geneticmaterialfox" variantof="geneticmaterialcrawler">
     <PreferredContainer primary="medfabcab" />
@@ -149,15 +140,14 @@
         <Remove />
       </StatusEffect>
     </GeneticMaterial>
-    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="2,1" sheetelementsize="64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Genetic.png" sheetindex="2,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Textures/Genetic.png" sheetindex="2,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Textures/Genetic.png" sheetindex="2,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
     <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
       <Containable items="geneticmaterial" />
     </ItemContainer>
   </Item>
-
   <!-- Генетический материал собаки -->
   <Item name="" identifier="geneticmaterialdog" variantof="geneticmaterialcrawler">
     <PreferredContainer primary="medfabcab" />
@@ -189,15 +179,14 @@
         <Remove />
       </StatusEffect>
     </GeneticMaterial>
-    <InventoryIcon texture="%ModDir%/Genetic.png" sheetindex="3,1" sheetelementsize="64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Genetic.png" sheetindex="3,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Textures/Genetic.png" sheetindex="3,1" sheetelementsize="64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Textures/Genetic.png" sheetindex="3,0" sheetelementsize="32,40" depth="0.6" origin="0.5,0.5" />
     <Body width="23" height="31" density="20" />
     <Holdable handle1="0,0" slots="Any"></Holdable>
     <ItemContainer capacity="1" canbeselected="false" hideitems="true" allowaccess="false" showcontainedstateindicator="false">
       <Containable items="geneticmaterial" />
     </ItemContainer>
   </Item>
-
   <!-- Скрытие спайщика на голове -->
   <Override>
     <Item name="" identifier="genesplicer" scale="0.4" category="Equipment" tags="smallitem" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
@@ -228,7 +217,41 @@
         <Containable items="geneticmaterial" />
       </ItemContainer>
       <Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-        <sprite name="Gene Splicer Wearable" texture="%ModDir%/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="150,150,64,54" origin="0.6,0.0" />
+        <sprite name="Gene Splicer Wearable" texture="%ModDir%/Textures/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="150,150,64,54" origin="0.6,0.0" />
+      </Wearable>
+    </Item>
+    <Item identifier="advancedgenesplicer" variantof="genesplicer" allowasextracargo="true" descriptionidentifier="advancedgenesplicer">
+      <PreferredContainer primary="medcab" secondary="medcab"/>
+      <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0"/>
+      <Price baseprice="550" sold="false" minleveldifficulty="65">
+        <Price storeidentifier="merchanthusk" minavailable="1" maxavailable="2" sold="true">
+          <Reputation faction="huskcult" min="50"/>
+        </Price>
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" />
+        <Price storeidentifier="merchantresearch" multiplier="1.1" sold="true" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="fulgurium" amount="1" />
+        <Item identifier="copper" amount="2" />
+        <Item identifier="rubber" />
+        <Item identifier="silicon" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+        <RequiredSkill identifier="medical" level="60" />
+        <RequiredItem identifier="fulgurium" />
+        <RequiredItem identifier="fpgacircuit" amount="2" />
+        <RequiredItem identifier="rubber" amount="2" />
+        <RequiredItem identifier="silicon" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="327,62,73,65" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />
+      <Body radius="15" width="45" density="30" />
+      <ItemContainer capacity="2" />
+      <Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Gene Splicer Wearable" texture="%ModDir%/Textures/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="150,150,64,54" origin="0.6,0.0" />
       </Wearable>
     </Item>
   </Override>
